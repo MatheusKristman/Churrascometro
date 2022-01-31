@@ -62,6 +62,7 @@ button {
   font-size: 20px;
   font-family: "Oswald", sans-serif;
   box-shadow: 2px 2px 1em black;
+  color: white;
 }
 
 #resultado {
@@ -83,9 +84,7 @@ button {
     body{        
         margin: 0;
         width: 100%;
-        min-height: 100vh;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        min-height: 100vh;        
     }    
 
     .container {
@@ -98,11 +97,13 @@ button {
       border-radius: 0;
       top: 0;
       left: 0;      
-      transform: none;             
+      transform: none;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);             
     }
   
     #resultado {
-      padding-top: 0px;
+      padding-top: 0px;      
     }
   
     button {
